@@ -11,13 +11,12 @@ class Deck:
   def __init__(self, card):
     self.card: Card = card
     
-  def init(self):
+  def initialize_deck(self):
     self.cards = self._create_deck(self.card)
     
     self._shuffle_deck(self.cards)
     
-    print(self.cards)
-    
+    return self.cards
     
   def _create_deck(self, card):
     deck = list()
