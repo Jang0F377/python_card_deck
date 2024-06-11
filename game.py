@@ -20,7 +20,7 @@ class Game:
   ):
     cards_per_player = int(len(self.deck) / self.PLAYER_COUNT)
     
-    for x in range(cards_per_player):
+    for i in range(cards_per_player):
       for player in self.players:
         player['hand'].append(self.deck.pop())
     

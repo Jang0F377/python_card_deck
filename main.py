@@ -9,4 +9,4 @@ if __name__ == '__main__':
   deck = Deck(card)
   game = Game(deck, player)
   game.start_game()
-  pass
+  
